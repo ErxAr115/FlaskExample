@@ -10,7 +10,7 @@ def ping():
 
 @app.route('/products')
 def getProducts():
-    return jsonify({"products": products, "message": "Lista de productos"})
+    return jsonify({"products": products, "message": "Product's List"})
 
 @app.route('/products/<string:product_name>')
 def getProduct(product_name):
